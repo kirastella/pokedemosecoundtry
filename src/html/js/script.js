@@ -1,0 +1,1 @@
+alert("add your scripts to the /src/js folder");
