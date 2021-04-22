@@ -1,0 +1,18 @@
+.searchform {
+
+    display: flex;
+
+    &__input {
+        padding:0.5em;
+        border: 2px solid darkblue;
+        border-radius: 0.75em 0 0 0.75em
+    }
+
+    &__submit {
+        background-color: darkblue;
+        border-radius: 0 0.75em 0.75em 0;
+        color: yellow;
+        border: none; 
+        padding:  0.5em 1.25em;
+    }
+}
