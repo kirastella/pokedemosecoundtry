@@ -15,25 +15,17 @@
 </head>
 <body>
     <div class="wrapper">
-        <header class="header">
+        <header>
             <h1>My Pokedex!</h1>
         </header>
-        <form action="/result" class="searchform">
-            <input type="search" name="search" id="search" class="searchform__input">
-            <button type="submit" class="searchform__submit">Search</button>
-        </form>
-        <ul class="pokelist"></ul>
+
+        <article class="single">
+            <h2>single pokemon</h2>
+        </article>
 
         <footer class="pokefooter"></footer>
     </div>
-    <div class="overlay">
-        
-        <div class="overlay__buttons">
-            <button class="nextBtn">&rarr;</button>
-            <button class="skipBtn">Skip</button>
-        </div>
-        <div class="overlay__content"></div>
-    </div>
+
     <script src="/js/app.js"></script>
 </body>
 </html>
