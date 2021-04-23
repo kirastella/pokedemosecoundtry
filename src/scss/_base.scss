@@ -43,3 +43,25 @@ button, textarea, input {
         pointer-events: none;
     }
 }
+.animate__animated{
+    text-align: center;
+}
+.animate__link a{
+   text-decoration: none;
+}
+.animate__color{
+    animation: myColorAnimation 3s ease-in 4s forwards;
+}
+.animate__jump{
+    animation: myJumpAnimation 3s ease-in 4s forwards;
+}
+
+
+@keyframes myColorAnimation {
+    from {color: blue;}
+    to {color: yellow;}
+}
+@keyframes  myJumpAnimation{
+    from { height: 0%;}
+    to {height: 70%;}
+}
