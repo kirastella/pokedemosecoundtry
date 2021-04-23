@@ -1,6 +1,7 @@
 document.addEventListener("DOMContentLoaded", function() {
 
     const overlay = document.querySelector(".overlay");
+    if (overlay) {
     const nextBtn = overlay.querySelector(".nextBtn");
     const skipBtn = overlay.querySelector(".skipBtn");
     const content = overlay.querySelector(".overlay__content")
@@ -41,7 +42,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     }
 
-    if (localstModule.read("onboardingComplete") != "true") {
+    if (overlay && localstModule.read("onboardingComplete") != "true") {
         step("Click here to view Pokemon details", "60px", "200px")
         increaseCurrentStep()
     } else {
@@ -83,5 +84,5 @@ document.addEventListener("DOMContentLoaded", function() {
         let mystep = localstModule.read("currentStep") ? parseInt(localstModule.read("currentStep")) + 1 : 1;
         localstModule.create("currentStep", mystep);
     }
-
+    }
 });
